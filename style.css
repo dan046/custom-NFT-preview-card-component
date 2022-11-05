@@ -1,0 +1,136 @@
+html{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #0d192b;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #14253d;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.top-container{
+    width: 100%;
+    padding: 20px;
+}
+
+#img-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.eth-icon{
+    padding: 10px;
+}
+
+.eth-flex, .clock-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+#value{
+    color: #00fff7;
+    margin: 0px 0px 0px 5px;
+}
+
+#nft-title, #mid-para{
+    margin: 0px 0px 20px 30px;
+}
+
+#nft-title{
+    color: white;
+    font-weight: 600;
+}
+
+#mid-para{
+    font-size: 18px;
+    font-weight: 300;
+    color: #8bacda;
+    margin-bottom: 0;
+}
+
+#duration{
+    color: #8bacda;
+    font-weight: 400;
+    margin: 0px 0px 0px 2px;
+}
+
+.line{
+    display: flex;
+    align-self: center;
+    border-bottom: 1px solid #2f415b;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.bottom-container{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 20px 35px;
+}
+
+#avatar{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+p#para{
+    color: #8bacda;
+    margin: 0px 5px 0px 15px;
+    font-weight: 400;
+}
+
+p#creator{
+    color: white;
+    font-weight: 400;
+}
+
+/* Added Some Mobile First Concept */
+@media screen and (min-width: 576px) {
+    .eth-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .eth-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #value{
+        margin-right: 100px;
+    }
+
+    .eth-flex, .clock-flex{
+        padding: 0;
+    }
+}

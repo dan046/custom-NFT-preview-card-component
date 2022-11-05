@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>NFT preview card component</title>
+</head>
+
+<body>
+  <div class="main-container">
+
+    <div class="top-container">
+      <img id="img-container" src="./images/image-equilibrium.jpg" alt="image-equilibrium">
+    </div>
+
+    <div class="middle-container">
+        <h2 id="nft-title">Equilibrium #3429</h2>
+        <p id="mid-para">Our Equilibrium collection promotes balance and calm.</p>
+
+        <!-- Had to make several containers in order to wrap and trigger the right flexbox properties for responsive design -->
+
+      <div class="eth-icon">
+
+        <div class="eth-container">
+          
+          <div class="eth-flex">
+            <img id="eth-img" src="./images/icon-ethereum.svg" alt="icon-ethereum">
+            <h4 id="value">0.041 ETH</h4>
+          </div>
+
+          <div class="clock-flex">
+            <img id="clock-container" src="./images/icon-clock.svg" alt="icon-clock">
+            <p id="duration"> </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="bottom-container">
+        <img id="avatar" src="./images/image-avatar.png" alt="image-avatar">
+          <p id="para">Creation of</p>
+          <p id="creator">Jules Wyvern</p>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
